@@ -18,6 +18,6 @@ for i in range (num_of_shapes):
   #shape = plt.Circle((np.random.randint(0, xlim), np.random.randint(0, ylim)), radius=(i+1)*10, color='red', fill=False)
   shape = plt.Rectangle((center_x, center_y),(i+1)*10,(i+1)*10, fill=None, edgecolor =  'r')
   ax.add_patch(shape)
-  plt.axis('on')
+  plt.axis('off') # Turn on and off
   plt.savefig('Data/'+str(i)+'.png',bbox_inches = 'tight' )
 
